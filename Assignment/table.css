@@ -14,7 +14,9 @@ h1{
 }
 .second-image{
     position: relative;
-    display: flex;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     flex-direction: column;
     margin-bottom: 0px;
     align-items: center;
