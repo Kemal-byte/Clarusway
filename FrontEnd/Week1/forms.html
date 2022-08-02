@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Froms</title>
+</head>
+<body>
+    <h1>Wlecome to island</h1>
+
+    <form action="result.html" method="get">
+
+        <label for="name">Enter your name...</label>
+        <input type="text" name="name" id="name" required>
+        <!-- To connect label and inputs we need to use id and for attributes. -->
+        <label for="surname">Enter your surname</label>
+        <input type="text" name="surname" id="surname">
+        <label for="password">Enter your password</label>
+        <input type="password" name="password" id="password">
+
+        
+        
+        <div>
+            <label for="Male">Alpha Male</label>
+            <input type="radio" name="Gender" id="Male" value="male">
+            <!-- In radio selection, make sure the name attribute is the same for all options, otherwise you can make more than 1 selection
+                in radio input selection. -->
+                <label for="betaMale">Beta Male</label>
+                <input type="radio" name="Gender" id="betaMale" value="betamale">
+                <!-- values attribute is used for different purposes.
+                    For "button", "reset", and "submit" - it defines the text on the button
+                    For "text", "password", and "hidden" - it defines the initial (default) value of the input field
+                    For "checkbox", "radio", "image" - it defines the value associated with the input (this is also the value that is sent on submit) -->
+                </div>
+                
+                <div>
+                    <p>Check your favorite animals</p>
+                    <input type="checkbox" name="animal_1" id="panda" value="panda">
+                    <label for="panda">panda</label>
+                    <input type="checkbox" name="animal_2" id="fish" value="fish">
+                    <!-- If you don't add values to checkboxes, to the backserver it sends as "on" or "off".  -->
+                    <label for="fish">fish</label>
+                </div>
+                <div>
+                    <label for="date">Choose a date</label>
+                    <input type="date" name="date" id="date">
+                </div>
+                <div>
+                    <label for="age">Age</label>
+                    <input type="number" name="Input-Age" id="age" step="2" min="0" max="100">
+                    <!-- step changes how many number it should increase or decrease. -->
+                </div>
+                <div>
+                    <label for="file">Pick a file</label>
+                    <input type="file" name="choose_file" id="file">
+                </div>
+                <div>
+                    <label for="input-browser">Browsers</label>
+
+                    <input type="text" name="user browser" id="input-browser" list="browsers">
+                    <!-- to connect datalist and input box, use list attribute. -->
+                    <datalist id="browsers">
+                        <option value="Firefox"></option>
+                        <option value="Chrome"></option>
+                        <option value="edge"></option>
+                        <option value="Opera"></option>
+                    </datalist>
+
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Personal information</legend>
+                        <label for="surname">Enter your surname</label>
+                        <input type="text" name="surname" id="surname">
+                        <label for="password">Enter your password</label>
+                        <input type="password" name="password" id="password">
+                    </fieldset>
+                </div>
+
+
+
+
+
+                <input type="submit" value="send">
+                <input type="reset" value="reset">
+            </form>
+
+</body
+
+>
+</html>
