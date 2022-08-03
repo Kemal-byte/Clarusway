@@ -1,0 +1,14 @@
+.container {
+    background-color: red;
+}
+.n1{
+    display: inline-block;
+    border: 4px solid black;
+    background-color: pink;
+}
+.n2{
+    background-color: aqua;
+}
+.n3 { 
+    background-color: yellow;
+}
