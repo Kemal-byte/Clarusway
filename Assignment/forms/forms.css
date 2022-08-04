@@ -1,0 +1,50 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    width: 70%;
+    margin: 5% auto;
+}
+legend{
+    background-color: red;
+    color: white;
+}
+.labelSection{
+    width: 150px;
+    display: inline-block;
+}
+.radio-bttns{
+    /* width: 150px; */
+    margin-left: 150px;
+    display: inline-block;
+}
+.scroll{
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    overflow-y: auto;
+}
+.Pdilleri{
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+}
+#sozlesme{
+    width: 400px;
+    text-align: start;
+}
+.lastSection{
+    display: block;
+}
+.lastLabels{
+    display: inline-block;
+    width: 300px;
+}
+#rdio{
+    
+    display: inline-block;
+}

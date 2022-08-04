@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>ABC Tasarim Program Kurulum ve Satis Sozlesmesi</h1>
+        </header>
+        <section class="n1 box">
+            <fieldset>
+                <legend>Sozlesme Onayi</legend>
+                <input type="checkbox" name="agree" id="agree">
+                <label for="agree">Asagidaki Bilgilerin dogrulugunu kabul ediyorum ve sozlesmesini onayliyorum.</label>
+                <br>
+                <input type="button" value="Formu Kaydet">
+                <input type="button" value="Formu Kaydet">
+            </fieldset>
+        </section>
+        <section class="n2 box">
+            <fieldset>
+                <legend>Personal Informations</legend>
+                <label class="labelSection" for="FID">Form Guvenlik ID</label>
+                <input type="text" name="FID" id="FID" placeholder="Id giriniz">
+                <br>
+                <label class="labelSection" for="name">Ad</label>
+                <input type="text" name="name" id="name" placeholder="isminiz">
+                <br>
+                <label class="labelSection" for="surname">Soyad</label>
+                <input type="text" name="surname" id="surname" placeholder="Soyisim">
+                <br>
+                <label class="labelSection" for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="asd@gmail.com">
+                <br>
+                <label class="labelSection" for="age">Yas</label>
+                <input type="text" name="age" id="age" placeholder="420">
+                <BR></BR>
+                <input type="file" id="myFile" name="filename">
+            </fieldset>
+        </section>
+        <Section class="n3 box">
+            <fieldset>
+                <legend>Diger Bilgiler</legend>
+                <h4>Bu alana mesleki bilgilerinizi giriniz</h4>
+                <label for="date">Sektore Giris Tarihiniz</label>
+                <input type="date" name="date" id="date">
+                <br>
+                <label for="experience">Sektor deneyimi</label>
+                <br>
+                <input class="radio-bttns" type="radio" name="deneyim" id="experience1" value="0-1 sene">
+                <label for="experience1">0-1 sene</label>
+                <br>
+                <input class="radio-bttns" type="radio" name="deneyim" id="experience2" value="0-1 sene">
+                <label for="experience2">1-3 sene</label>
+                <br>
+                <input class="radio-bttns" type="radio" name="deneyim" id="experience3" value="0-1 sene">
+                <label for="experience3">3-5 sene</label>
+                <br>
+                <label class="Pdilleri" for="programmingL">Programlama dilleri</label>
+                
+                <div class="scroll">
+                    <table>
+                        <tr>
+                            <td>C#</td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                        </tr>
+                        <tr>
+                            <td>jS</td>
+                        </tr>
+                        <tr>
+                            <td>java</td>
+                        </tr>
+                        <tr>
+                            <td>C++</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                        </tr>
+                        <tr>
+                            <td>Kotlin</td>
+                        </tr>
+                        <tr>
+                            <td>Fortran</td>
+                        </tr>
+                        <tr>
+                            <td>Php</td>
+                        </tr>
+                    </table>
+                </div>
+            </fieldset>
+        </Section>
+        <section>
+            <fieldset>
+                <legend>Sozlesme Kopyasi</legend>
+                <textarea name="sozlesme" id="sozlesme" cols="30" rows="5">
+                    
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quibusdam nulla velit iure veritatis omnis quis, mollitia eum, ea libero tenetur maxime nemo sapiente debitis. Vitae laborum veniam iure perferendis?
+                </textarea>
+ 
+            </fieldset>
+        </section>
+        <section>
+            <fieldset class="lastSection">
+                <legend>Mail listesi</legend>
+                <label class="lastLabels" for="rdio">Mail listesinden mahrum kalmak istiyorum</label>
+                <input type="radio" name="yes" id="rdio1">
+                
+                <br>
+                <label class="lastLabels" for="rdio2">Verdigim bilgiler dogrudur</label>
+                <input type="radio" name="no" id="rdio2">
+            
+            </fieldset>
+        </section>
+    </main>
+</body>
+</html>
