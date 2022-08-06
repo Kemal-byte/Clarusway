@@ -32,17 +32,53 @@ body{
     line-height: 1.6;
 }
 h1,h2,h3{
+    color: var(--clr-primary-400);
     font-family: var(--ff-accent);
     font-weight: 900;
     line-height: 1;
 }
-section{
+h2,h3,p{
+    margin-bottom: 1em;
+    /* em means 1 unit size of the text. */
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.text-center{
+    text-align: center;
+}
+header, section{
     padding: 3rem 0;
+}
+@media (min-width: 40em){
+    header, section{
+        padding: 3rem 0;
+    }
 }
 .container{
     /* margin-inline only apply changes to left and right. */
     margin-inline: auto;
     width: min(90%,70.5rem);
+}
+.container-narrow{
+    max-width: 34rem;
+}
+.split{
+    display: flex;
+    flex-direction: column;
+}
+
+@media(min-width: 40em){
+    .split{
+        flex-direction: row;
+    }
+    .split > *{
+        flex-basis: 100%;
+    }
+    .split > * + * {
+        margin-left: 2em;
+    }
 }
 .bg-light{
     background-color: var(--clr-primary-200);
