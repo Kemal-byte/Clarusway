@@ -1,0 +1,87 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    background-image: url(background_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    max-width: 1240px;
+    top: 100px;
+    margin-bottom: 50px;
+    margin-inline: auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.description{
+    color: white;
+}
+.container-box{
+    width: inherit;
+    height: inherit;
+    background-color: #000000;
+    opacity: 0.3;    
+}
+.title h1{
+    font-family: Bowlby One SC;
+    font-size: 50px;
+    color: #e50914;
+}
+.description{
+    font-size: 23px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: Sorts Mill Goudy;
+}
+.surveyform{
+    position: relative;
+    margin-inline: auto;
+    width: 500px;
+    text-align: start;
+    background-color: #000000;
+    opacity: 0.8;
+    color: white;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+.input-area{
+    box-sizing: border-box;
+    padding: 10px;
+    height: 60px;
+    width: 420px;
+}
+.textarea{
+    width: 420px;
+    height: 92px;
+}
+.selection{
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.button{
+    position: relative;
+    margin-inline: auto;
+    text-align: center;
+    margin: 10px;
+}
+.button-selection{
+    margin: 10px;
+    width: 160px;
+    height: 45px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 0%;
+    padding: 10px;
+    border-radius: calc(45px/2);
+    background-color: #e50914;
+    color: white;
+    cursor: pointer;
+}
+.button-selection:hover{
+    color: #e50914;
+    background-color: white;
+}
