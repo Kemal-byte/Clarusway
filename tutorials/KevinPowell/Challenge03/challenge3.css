@@ -1,0 +1,42 @@
+body, html, *{
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.container{
+    background-color: #23424A;
+    min-width: 270px;
+    overflow: hidden;
+}
+.half{
+    padding: 10%;
+    width: 50%;
+    margin: auto 0;
+}
+h1{
+    font-size: 48px;
+    margin-bottom: 1em;
+    min-width: 270px;
+
+}
+.paragraph{
+   
+    font-size: 21px;
+    min-width: 270px;
+}
+button{
+    margin-top: 3em;
+    padding: 16px 40px;
+    border-radius: 32px;
+    color: #23424A;
+    background-color: #38CFD9;
+    font-style:normal;
+    font-weight: bold;
+    font-size: 21px;
+    border-style: none;
+    text-transform: uppercase;
+    min-width: 270px;
+}
