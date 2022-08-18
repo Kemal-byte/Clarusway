@@ -44,7 +44,8 @@ h1 {
     display: flex;
 
     /* can't use yet */
-    /* gap: 100px; */
+    gap: 100px;
+    text-align: center;
 }
 
 .col {
@@ -60,6 +61,9 @@ h1 {
 
 .hero__text {
     width: 60%;
+}
+.hero__text h1{
+    font-size: 48px;
 }
 
 .hero p {
@@ -80,4 +84,17 @@ h1 {
 .btn:hover,
 .btn:focus {
     opacity: .75; 
+}
+.row-color-bottom{
+    background-color: #136C72;
+}
+.container .row{
+    padding: 100px 0;
+}
+.container .row .col h2{
+    color: #87629A;
+    font-size: 36px;
+}
+.row-color-bottom .row .col h2{
+    color: #fff;
 }
