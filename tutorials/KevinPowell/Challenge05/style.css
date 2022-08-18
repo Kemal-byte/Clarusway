@@ -62,6 +62,7 @@ h1 {
 }
 .flex-image{
     align-self: flex-start;
+    width: 32%;
 }
 .hero__text { 
     width: 62%;
@@ -96,11 +97,18 @@ h1 {
     padding: 2rem;
     text-align: center;
     color: #fff;
+    width: 32%;
 }
+.left{
+    width: 62%;
+}
+/* If you only add width preference to one of the flex items
+it won't work. To solve this problem you need to assign
+width to every flex items inside the parent div. */
 .left h2{
     color:#136C72;
     font-size: 35px;
 }
-.right h2 ~ h2{
+.right p + h2{
     padding-top: 2rem;
 }
