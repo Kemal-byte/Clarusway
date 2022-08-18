@@ -41,9 +41,8 @@ h1 {
     /* display: flex => flex container */
     display: flex;
     justify-content: space-between;
-    
+    gap: 100px;
     /* can't use yet */
-    /* gap: 100px; */
 }
 
 .col {
@@ -59,8 +58,11 @@ h1 {
     padding: 100px 0;
     background-color: #23424A;
     color: #FFF;
+    margin-bottom: 2rem;
 }
-
+.flex-image{
+    align-self: flex-start;
+}
 .hero__text { 
     width: 62%;
 }
@@ -88,4 +90,17 @@ h1 {
 .btn:hover,
 .btn:focus {
     opacity: .75; 
+}
+.right{
+    background-color: #136C72;
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+}
+.left h2{
+    color:#136C72;
+    font-size: 35px;
+}
+.right h2 ~ h2{
+    padding-top: 2rem;
 }
