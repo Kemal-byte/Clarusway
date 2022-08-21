@@ -4,7 +4,8 @@ const getUserChoice = (userInput) => {
     if (
       userInput === "rock" ||
       userInput === "scissors" ||
-      userInput === "paper"
+      userInput === "paper" ||
+      userInput === "bomb"
     ) {
       return userInput;
     } else {
@@ -34,16 +35,21 @@ const getUserChoice = (userInput) => {
       return "User Wins";
     } else if (userChoice === "scissors" && computerChoice === "rock") {
       return "User Wins";
-    } else {
+    } else if (userChoice === "bomb"){
+      return "User Wins";
+    } else if (userChoice === undefined){
+      return "No one wins";
+    }else {
       return "Computer Wins";
     }
   };
   const playGame = function(){
-    userChoice = getUserChoice('rock');
+    userChoice = getUserChoice('okau');
     console.log(`User choice is ${userChoice}`)
     computerChoice = getComputerChoice();
     console.log(`Computer choice is ${computerChoice}`)
     console.log(determineWinner(userChoice, computerChoice));
   }
+  
   playGame();
   
