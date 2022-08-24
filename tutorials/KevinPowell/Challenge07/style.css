@@ -10,3 +10,65 @@
   --brown: #824936;
   --dark: #222c2a;
 }
+.container-header {
+  background-color: var(--light);
+  min-height: 660px;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  max-width: 1128px;
+  display: flex;
+}
+.first-section {
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+  padding: 4rem 0rem;
+}
+.small-headin {
+  font-family: "Roboto Light";
+  font-size: 18px;
+}
+.big-headin {
+  font-family: "Playfair Display";
+  font-size: 60px;
+  font-weight: 900;
+  color: var(--brown);
+}
+.container-body1 {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.body-heading {
+  color: var(--brown);
+  font-size: 36px;
+  font-family: "Playfair Display";
+  text-align: center;
+  margin-top: 1em;
+  font-weight: 900;
+}
+.paragraphs {
+  display: flex;
+  text-align: justify;
+  gap: 50px;
+  margin-top: 2em;
+  font-size: 21px;
+  font-family: "Roboto Regular";
+}
+.container-body2 {
+  background-color: var(--dark);
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.half {
+  width: 49%;
+}
+.third-section {
+  justify-content: space-between;
+  color: #fff;
+  gap: 50px;
+  padding: 4rem 0rem;
+}
