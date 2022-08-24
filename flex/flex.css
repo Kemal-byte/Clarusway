@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  background-color: greenyellow;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.container div {
+  font-size: large;
+  background-color: aqua;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 1rem;
+  width: 5rem;
+  align-items: center;
+  text-align: center;
+}
+.container div:nth-child(2) {
+  flex-grow: 3;
+}
