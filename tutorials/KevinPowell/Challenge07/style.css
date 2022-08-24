@@ -72,3 +72,10 @@
   gap: 50px;
   padding: 4rem 0rem;
 }
+.container-body3 {
+  background-color: var(--brown);
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  color: #fff;
+}
