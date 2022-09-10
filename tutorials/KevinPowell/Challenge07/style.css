@@ -16,6 +16,11 @@
   display: flex;
   justify-content: center;
 }
+@media (max-width: 700px) {
+  .container-header {
+    background-color: #824936;
+  }
+}
 .container {
   max-width: 1128px;
   display: flex;
@@ -29,6 +34,7 @@
 .small-headin {
   font-family: "Roboto Light";
   font-size: 18px;
+  letter-spacing: 1.125rem;
 }
 .big-headin {
   font-family: "Playfair Display";
