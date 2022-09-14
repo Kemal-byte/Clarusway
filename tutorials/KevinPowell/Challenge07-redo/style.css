@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400&display=swap");
+
+:root {
+  --light: #f3eed9;
+  --brown: #824936;
+  --dark: #222c2a;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3125rem;
+  line-height: 1.6;
+  margin: 0;
+  color: var(--dark);
+}
+img {
+  max-width: 100%;
+  /* By default, the images are not responsive. So giving max-width of 100% makes them so.*/
+}
+h1,
+h2 {
+  margin-top: 0;
+  font-weight: 900;
+  font-family: "Playfair Display", serif;
+  line-height: 1.1;
+}
+section {
+  padding: 4em 0;
+}
+.container {
+  width: 85%;
+  max-width: 1128px;
+  margin: 0 auto;
+}
+.section-1 {
+  background-color: var(--light);
+  text-align: center;
+  padding: 9rem 0rem;
+  min-height: 660px;
+  display: flex;
+  align-items: center;
+}
+.section-title {
+  font-size: 2.25rem;
+  color: var(--light);
+}
+.section-2-title {
+  color: var(--brown);
+  text-align: center;
+  margin-bottom: 1em;
+}
+.section-1-intro {
+  font-family: "Roboto Light", sans-serif;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  margin-bottom: 0.25em;
+}
+.section-1-title {
+  font-size: 3.75rem;
+  color: var(--brown);
+}
+.section-3 {
+  background-color: var(--dark);
+  color: #fff;
+}
+.section-4 {
+  background-color: var(--brown);
+  color: #fff;
+}
+
+@media (min-width: 800px) {
+  .row {
+    display: flex;
+    gap: 30px;
+  }
+  .col {
+    width: 100%;
+    /* Or you could also use flex-grow:1 */
+  }
+}
