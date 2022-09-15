@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conquering Responsive Layouts</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container row">
+        <button class="nav-toggle" aria-label="open navigation">
+          <span class="hamburger"></span>
+        </button>
+        <a class="logo" href="#">
+          <img src="img/logo.svg" alt="conquering responsive layouts" />
+        </a>
+        <nav class="nav">
+          <ul class="nav__list nav__list--primary">
+            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+          <ul class="nav__list nav__list--secondary">
+            <li class="nav__item"><a href="#" class="nav__link">Sign In</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link nav__link--button">Sign up</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container row">
+        <div class="hero__text">
+          <h1>Responsive layouts don’t have to be a struggle</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+          <a href="#" class="btn">I want to learn</a>
+        </div>
+      </div>
+    </section>
+    <section class="three__col">
+      <div class="container three__col-flex">
+        <div class="col">
+          <h2 class="small-header">Mobile First</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni,
+            quos, sequi et consectetur placeat totam beatae quis in eum ex
+            tenetur pariatur nam repellendus quo adipisci est, illum eaque?
+            Saepe!
+          </p>
+        </div>
+        <div class="col">
+          <h2 class="small-header">Efficient</h2>
+          <p>
+            Veniam nulla fuga a deserunt nisi incidunt explicabo, tempore et
+            iste nesciunt aspernatur repudiandae veritatis voluptatibus, minus
+            maiores, itaque neque omnis aliquam consectetur! Perspiciatis a id
+            expedita aperiam minima voluptatum!
+          </p>
+        </div>
+        <div class="col">
+          <h2 class="small-header">Done Right</h2>
+          <p>
+            Error molestiae fugit, repellendus debitis sapiente delectus nihil
+            beatae aut neque obcaecati, necessitatibus facere! Saepe, eos amet?
+            Cumque possimus aut saepe vel nulla temporibus ducimus ipsam quidem
+            tempora, aliquid sapiente!
+          </p>
+        </div>
+      </div>
+    </section>
+    <main class="main container row">
+      <section class="primary-content">
+        <h2 class="small-header">It doesn't have to be so hard</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam.
+        </p>
+        <div class="image__parent">
+          <img src="the-image.jpg" alt="UX design sketches" class="hero__img" />
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+          enim ad minim veniam.
+        </p>
+      </section>
+      <aside class="sidebar">
+        <div class="sidebar__item">
+          <h2 class="sidebar-title">Break it down</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+        </div>
+
+        <div class="sidebar__item">
+          <h2 class="sidebar-title">Work your way up</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+        </div>
+
+        <div class="sidebar__item">
+          <h2 class="sidebar-title">Something</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <div class="container">
+        <h1 class="footer__header">Just scratching the surface</h1>
+        <div class="footer__container">
+          <div class="footer__left">
+            <h3 class="small-header">About our company</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+              est eos reiciendis minus laborum ut aperiam enim officiis iusto
+              soluta?
+            </p>
+          </div>
+          <div class="f_item footer__right">
+            <div class="footer__right-item"></div>
+            <div class="footer__right-item"></div>
+            <div class="footer__right-item">
+              <div class="f_container">
+                <h3 class="small-header">Getting Around</h3>
+                <ul>
+                  <li>Home</li>
+                  <li>About</li>
+                  <li>Contact</li>
+                </ul>
+              </div>
+              <div class="f_container">
+                <h3 class="small-header">Other Things</h3>
+                <ul>
+                  <li>Lorem</li>
+                  <li>Ipsum</li>
+                  <li>CS:GO</li>
+                  <li>Destination unknown</li>
+                </ul>
+              </div>
+              <div class="f_container">
+                <h3 class="small-header">And more</h3>
+                <ul>
+                  <li>Lorem</li>
+                  <li>Ipsum</li>
+                  <li>CS:GO</li>
+                  <li>Destination unknown</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
