@@ -125,18 +125,26 @@ header {
   height: 0;
   position: absolute;
 }
-.nav__item {
+.nav__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+.nav__item {
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-weight: 550;
-}
-.nav__item a {
   text-decoration: none;
-  color: #fff;
   line-height: 2;
 }
-
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+}
+.nav__link:hover,
+.nav__link:focus {
+  opacity: 0.65;
+}
 .nav__link--button {
   color: #136c72;
   background-color: #fff;
@@ -193,11 +201,19 @@ header {
   .nav__list {
     display: flex;
     align-items: flex-start;
-    margin-top: 0;
+    margin: 0;
     gap: 15px;
   }
-  .nav__item a {
+  .nav__item {
     display: flex;
+    margin: 0;
+    line-height: normal;
+  }
+  .nav__link {
+    margin: 0;
+  }
+  .nav__list--secondary {
+    margin-left: 1em;
   }
   .nav__link--button {
     color: #136c72;
