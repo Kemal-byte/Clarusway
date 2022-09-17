@@ -1,0 +1,19 @@
+.closed {
+  display: none;
+}
+.open {
+  display: block;
+}
+.box {
+  padding: 1.5em;
+  background-color: bisque;
+  width: 60%;
+  text-align: center;
+  margin: 1em auto;
+}
+.box-hover {
+  background-color: rgb(208, 130, 36);
+  width: auto;
+  color: #fff;
+  font-size: large;
+}
