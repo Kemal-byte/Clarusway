@@ -41,3 +41,15 @@ storyWords.forEach((word) => {
   // a && c  → false      c && a → false
   // c && d  → false      d && c → false
 });
+
+//Call back function example below
+
+const asd = ["Elise", "Foobar", "Barney", "Bacon"];
+
+const levo = (arr, cb) => {
+  for (let i = 0; i < arr.length; i++) {
+    const element = arr[i];
+    cb(element);
+  }
+};
+levo(asd, (item) => console.log(item));
