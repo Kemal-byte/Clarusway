@@ -6,8 +6,16 @@ const input = document.getElementById("todo-input");
 const add_btn = document.getElementById("todo-button");
 const ul_list = document.getElementById("todo-ul");
 
-//Event block
+let todos = JSON.parse(localStorage.getItem("TODOS")) || []; // Eger localStorage da herhangi bir element yok ise bos bir array atar.
 
+const renderSavedTodos = () => {
+  todos.forEach((todo) => {
+    createListELement(todo);
+  });
+};
+renderSavedTodos();
+
+//Event block
 add_btn.addEventListener("click", () => {
   if (input.value.trim() === "") {
     alert("Please enter a valid value. It can't be empty");
@@ -18,12 +26,14 @@ add_btn.addEventListener("click", () => {
       text: input.value.trim(),
     };
     createListELement(newToDo);
+    todos.push(newToDo);
+    localStorage.setItem("TODOS", JSON.stringify(todos));
     input.value = "";
   }
 });
 
 // Creating the list and appending it to the parent element and to the DOM.
-const createListELement = (el) => {
+function createListELement(el) {
   const { id, compelte, text } = el; // I didn't really understand this line.
   // List element is created
   const li = document.createElement("li");
@@ -50,7 +60,7 @@ const createListELement = (el) => {
 
   //   adding the li section to ul_list.
   ul_list.appendChild(li);
-};
+}
 
 // This code shows what you clicked on the check list.
 // This will remove  from the DOM but not from the local storage if added.
