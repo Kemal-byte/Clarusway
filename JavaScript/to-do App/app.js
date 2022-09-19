@@ -75,6 +75,7 @@ ul_list.addEventListener("click", (e) => {
     localStorage.setItem("TODOS", JSON.stringify(todos));
   }
   if (e.target.classList.contains("fa-check")) {
+    // TODO: update the objects inside the array, then send the updated version to localStorage.
     e.target.parentElement.classList.toggle("checked");
   }
 });
