@@ -66,8 +66,13 @@ function createListELement(el) {
 // This will remove  from the DOM but not from the local storage if added.
 ul_list.addEventListener("click", (e) => {
   console.log(e.target);
+  const id = e.target.parentElement.getAttribute("id");
+
   if (e.target.classList.contains("fa-trash")) {
     e.target.parentElement.remove();
+    todos = todos.filter((todo) => todo.id !== Number(id));
+    // After deleting the element form the array, we send also send command to remove it from the local storage.
+    localStorage.setItem("TODOS", JSON.stringify(todos));
   }
   if (e.target.classList.contains("fa-check")) {
     e.target.parentElement.classList.toggle("checked");
