@@ -24,15 +24,18 @@ add_btn.addEventListener("click", () => {
 
 // Creating the list and appending it to the parent element and to the DOM.
 const createListELement = (el) => {
+  const { id, compelte, text } = el; // I didn't really understand this line.
   // List element is created
   const li = document.createElement("li");
   li.id = el.id;
-  //   li.setAttribute("id", el.id);  You can also do it this way.
+  // li.setAttribute("id", el.id);  You can also do it this way.
   const li_icon_ok = document.createElement("i");
   li_icon_ok.setAttribute("class", "fa fa-check");
   li.appendChild(li_icon_ok);
 
   console.log(li);
+  // When clicked on the check list, it adds completed class which changes the color.
+  el.completed && li.classList.add("completed");
 
   // Text element is created
   const p = document.createElement("p");
@@ -48,6 +51,18 @@ const createListELement = (el) => {
   //   adding the li section to ul_list.
   ul_list.appendChild(li);
 };
+
+// This code shows what you clicked on the check list.
+// This will remove  from the DOM but not from the local storage if added.
+ul_list.addEventListener("click", (e) => {
+  console.log(e.target);
+  if (e.target.classList.contains("fa-trash")) {
+    e.target.parentElement.remove();
+  }
+  if (e.target.classList.contains("fa-check")) {
+    e.target.parentElement.classList.toggle("checked");
+  }
+});
 
 // adding input when pressing enter.
 input.addEventListener("keydown", (e) => {
