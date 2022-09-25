@@ -22,4 +22,3 @@ const isValid = (s) => {
 let input = "{ [ ] ( ) }";
 let input2 = "{ [ ( ] ) }";
 console.log(isValid(input.split(" ")));
-// isValid("{ [ ] ( ) }")
