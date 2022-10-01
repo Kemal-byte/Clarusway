@@ -1,5 +1,5 @@
 const array = [10, 5, 2, 7, 8, 7];
-let k = 5;
+let k = 3;
 let a = k;
 let newArray = [];
 let maxNumber = 0;
