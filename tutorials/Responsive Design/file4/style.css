@@ -11,3 +11,25 @@ nav {
   overflow: auto;
   padding-left: 8%;
 }
+section {
+  width: auto;
+  display: inline-block;
+  height: 100vh;
+  overflow: auto;
+}
+@media screen and (min-width: 900px) {
+  nav {
+    width: 5%;
+    min-width: 125px;
+    height: 100vh;
+    float: left;
+  }
+  nav a {
+    display: block;
+    margin-top: 1em;
+  }
+  section {
+    width: 70%;
+    margin-left: 1rem;
+  }
+}
