@@ -1,5 +1,5 @@
 main {
-  width: 940px;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -16,11 +16,13 @@ body {
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 300%;
   margin: 0;
   padding: 0;
 }
-
+p {
+  text-align: center;
+}
 h1,
 h2 {
   text-align: center;
@@ -28,6 +30,6 @@ h2 {
 }
 
 .column {
-  width: 300px;
+  width: 30%;
   display: inline-block;
 }
