@@ -6,7 +6,8 @@ const Main = () => {
   return (
     <div className="card-container">
       {data.map((items, i) => (
-        <Cards {...items} />
+        <Cards {...items} key={i} />
+        // {...items} sends all the items from the loop.
       ))}
     </div>
   );

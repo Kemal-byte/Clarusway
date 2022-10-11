@@ -1,9 +1,12 @@
-import { data } from "../../helper/data";
-
 const Card = (items) => {
+  const { title, image, desc } = items;
   return (
     <div className="cards">
-      <h1>{items.title}</h1>
+      <div className="title">
+        <h1>{title}</h1>
+      </div>
+      <img src={image} alt="" />
+      <div className="card-over">{desc}</div>
     </div>
   );
 };
